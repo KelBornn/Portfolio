@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="bonsoir()">
+    <div class="container">
+      <div class="loading-screen"></div>
+      <div class="loader">
+        <div class="ringOne ring">
+          <img class="cercle invisible" src="static/ring.png" alt="" />
+        </div>
+        <div class="ringTwo ring">
+          <img class="cercle invisible" src="static/ring.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <img class="logoimg" src="static/tuyau.svg" />
+        <h1>Bryan Authiat</h1>
+      </div>
+      <a id="wip" href="#">WIP</a>
+    </header>
+    <div class="reseau">
+      <ul>
+        <li>
+          <a href="https://gitlab.com/KelBornn" target="_blank">
+            <ion-icon class="ionca" name="logo-gitlab" size="large"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <ion-icon class="ionca" name="mail-outline" size="large"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <ion-icon  class="ionca" name="logo-linkedin" size="large"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <div class="proposbloc">
+        <h2 class="ml7" id="title">            
+          <span class="text-wrapper">
+                <span class="letters">ÉTUDIANT EN SYSADMIN</span>
+          </span>
+        </h1>
+        <p class="propos">
+          Je m’appelle Bryan Authiat, j’ai commencé l’informatique il y a
+          bientôt 10 ans en assemblant des machines, puis arrivé au lycée j’ai
+          voulu faire de l’informatique mon domaine professionnel j’ai donc
+          effectué un Bac Sti2D option SIN pour ensuite me spécialiser dans le
+          réseau en faisant un BTS SIO option SISR dans lequel je me trouve
+          depuis bientôt 2 ans.
+        </p>
+        <p class="propos">
+          Après mon BTS je compte quitter le cursus scolaire classique pour
+          faire une formation en alternance dans le domaine du SysAdmin et
+          DevOps pendant deux ans.
+        </p>
+        <button class="oui" onclick="window.location.href='#skills'">
+          Compétence
+        </button>
+        <button class="non">Contact</button>
+      </div>
+    </main>
+    <h1 id="skills">Compétence</h1>
+    <section class="skills">
+      <article>
+        <div class="title-skills">
+          <ion-icon class="ionca" name="globe-outline"></ion-icon>
+          <h3>Réseaux</h3>
+        </div>
+        <p>
+          Au fil de mes expériences et cours j'ai acquis plusieurs compétences en
+          <strong>réseau</strong> tel que la configuration de switch (TCP/IP) ou
+          de router avec certains protocoles comme OSPF ou RIP, la configuration
+          de port et la maintenance d'un serveur font aussi partie des choses que
+          je sais faire.
+        </p>
+      </article>
+      <article>
+        <div class="title-skills">
+          <ion-icon class="ionca" name="cloud-outline"></ion-icon>
+          <h3>Administration</h3>
+        </div>
+        <p>
+          J'ai aussi été ammené à faire de <strong> l'administration système </strong>que ce soit de gérer des infrastructures d'entreprises avec des serveurs Windows 2019 ou des serveurs de logs et de fichier Linux, la supervision est aussi un domaine que je maitrise avec GLPI ou Centreon par exemple.
+        </p>
+      </article>
+      <article>
+        <div class="title-skills">
+          <ion-icon class="ionca" name="glasses-outline"></ion-icon>
+          <h3>Developpement</h3>
+        </div>
+        <p>
+          Même si le <strong>développement</strong> n'est pas ma spécialité j'ai pas mal de connaissance dans le domaine notamment en intégration web (HTML/CSS/JS) mais aussi en backend avec le Php et les bases de données ou en programmation plus basique avec le C#. Ce site est d'ailleurs fait par mes soins entièrement à la main.
+        </p>
+      </article>
+      <article>
+        <div class="title-skills">
+          <ion-icon class="ionca" name="hourglass-outline"></ion-icon>
+          <h3>Softskills</h3>
+        </div>
+        <p>
+          Pour ma <strong>compétence plus concrètes</strong> je suis à l'aise avec le travail en équipe et en leading d'équipe grâce à mes différents projets et stage, je suis aussi très autonome, j'apprends vite la nouvelle technologie et je m'imprègne rapidement dans les différentes situations que je rencontre.
+        </p>
+      </article>
+    </section>
+    <h1 id="projet">Projets</h1>
+    <section class="projet">
+      <div class="projet1" id="myButton" onclick="location.href='projet1.html';">
+        <div class="cover">
+          <h3>Windows Server</h3>
+        </div>
+        <img src="./static/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="" />
+      </div>
+      <div class="projet2">
+        <div class="cover">
+          <h3>WIP</h3>
+        </div>
+        <img src="./static/stanley-dai-73OZYNjVoNI-unsplash.jpg" alt="" />
+      </div>
+    </section>
+    <h1 id="projet">Stage</h1>
+    <section class="stage">
+      <p>
+        Xefi situé à Bourgoin-Jallieu une <strong>SARL unipersonnelle</strong> créée en 2014, est une société spécialisée dans l’informatique de proximité pour les <strong>professionnelles</strong> elle maintient, installe et conseille les entreprises souhaitant léguer la gestion de leur SI (Serveur, Poste, Fibre, VOIP, Impression, etc).
+      </p>
+      <img src="./static/xefi.png" alt="" />
+      <p>
+        J’ai effectué <strong>7 semaines</strong> de stage au sein de l’entreprise du 2 Novembre
+        au 18 décembre et j’ai eu l’occasion d’expérimenter et de découvrir le
+        monde de l’entreprise pour la première fois.
+      </p>
+    </section>
+    <section class="mission">
+      <article>
+        <div class="title-mission">
+          <ion-icon class="ionca" name="people-outline"></ion-icon>
+          <h3>Support utilisateur</h3>
+        </div>
+        <p>
+          Xefi étant un <strong>prestataire de services pro</strong>, les clients faisaient souvent des requêtes auprès des commerciaux qui ensuite créaient des tickets sur une <strong>CRM propriétaire</strong> que les techniciens scrutent en permanence pour appeler les clients et les aiders à distance avec des outils adéquats.
+        </p>
+      </article>
+      <article>
+        <div class="title-mission">
+          <ion-icon class="ionca" name="build-outline"></ion-icon>
+          <h3>Maintenance d'infrastructure</h3>
+        </div>
+        <p>
+          Le plus gros de mon stage, je solutionnais les <strong>incidents sur des machines clients</strong> ou alors je préparais les commandes de client comme par exemple l'installation d'un nouveau system d'exploitation ou l'ajout de disque dur et de RAM en suivant un devis que l'on m'a confié
+        </p>
+      </article>
+      <article>
+        <div class="title-mission">
+          <ion-icon class="ionca" name="hardware-chip-outline"></ion-icon>
+          <h3>Deploiment d'infrastructure</h3>
+        </div>
+        <p>
+          L'une de mes missions a été de déployer tous une <strong>infrastructure</strong>  avec mon équipe il y avait un nouveau serveur à créer entièrement ainsi que 6 postes fixes et 1 laptop à préparer et un NAS.         Une fois le serveur fini il a fallu créer les utilisateurs et ajouter les machines au domaine.
+          <br>
+          C’est moi qui ai configuré le <strong>NAS</strong> avec le service <strong>RAID</strong> adéquat, c’est
+          lui qui va stocker les sauvegardes du nouveau serveur.
+          <br>
+          Ensuite nous sommes aller dans l'entreprise pour tout installer
+        </p>
+      </article>
+      <article>
+        <div class="title-mission">
+          <ion-icon class="ionca" name="terminal-outline"></ion-icon>
+          <h3>Configuration de server</h3>
+        </div>
+        <p>
+          L'une de mes dernières missions a été, avec l'aide d'un apprenti de <strong>configurer entièrement un serveur Windows 2019</strong> sous les directives de notre responsable nous avons installé tous les services tels que <strong>AD, Hyper-V, Active directory</strong>, etc...  
+        </p>
+      </article>
+      <article>
+        <div class="title-mission">
+          <ion-icon class="ionca" name="cafe-outline"></ion-icon>
+          <h3>Bilan</h3>
+        </div>
+        <p>
+          Grâce à ce stage j'ai pu découvrir le mode de l'entreprise ainsi que plusieurs technologies comme le service <strong>Hyper-V, les VPN</strong> et le deploiment de suite logicielle. 
+        </p>
+      </article>
+      </section>
+      <h1 id="veille">Veille</h1>
+      <section class="veille">
+        <p class="veillintro">J'effectue de la <strong>veille technologique</strong> depuis mes 11 ans en commencant par du <strong>hardware</strong> pour ensuite me diversifier en passant par le <strong>developpement</strong> et le <strong>réseau</strong>, c'est qui m'a motiver à faire un BTS SIO.</p>
+        <div class="veillecontent">
+          <div class="integration">
+            <p>La chaine youtube <strong>Tech-Sama</strong>  est une chaine de high-tech informatique généraliste dirigé par aurelien sama, les sujet sont diverse et vont du simple fait divers populaire au coté assez technique sur des serveur ou des nouvelles technologies complexes. </p>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e6rx7_R_sNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="integration vod2">
+            <p>La chaine de <strong>Yanis-Astuce-Pc</strong> est une chaine plus technique coté hardware et réseau ou il va faire un peu de vulgarisation et de tutoriel (Windows, linux, routage, ect) .</p>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S9qsgi6sfzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="ccl-veille">
+          <p>Je fais de la veille <strong>quotidiennement</strong> en regardant une <strong>vidéo</strong> qui viens de sortir dans mon lit le soir où en regardant <strong>twitter</strong> sur des <strong>comptes spécialisé</strong> .</p>
+        </div>
+      </section>
+      <script>
+        window.scrollBy({ top: -100, behavior: 'smooth' });
+      </script>
+    <script>
+     $(window).on('beforeunload', function() {
+      $('body').hide();
+      $(window).scrollTop(0);
+    });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

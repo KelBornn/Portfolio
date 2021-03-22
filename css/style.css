@@ -1,0 +1,524 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../static/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+.scrolllock{
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.cercle {
+    width: 100%;
+}
+
+.loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #0a0a0a;
+    z-index: 2;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1{
+    font-family: 'Grand Hotel', sans-serif;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.logo{
+    display: flex;
+    padding-left: 50px;
+}
+
+.logo h1{
+    all: unset;
+    font-size: 25px;
+    color: white;
+    font-family: "poppins";
+}
+
+.logoimg{
+    width: 5%;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    padding-right: 50px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main div{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+}
+
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 100;
+    padding-top: 30px;
+}
+.propos{
+    font-weight: normal;
+
+}
+.oui{
+    margin-top: 20px;
+    padding: 6px 50px 6px 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #D13B3B;
+    border: none;
+    cursor: pointer;
+}
+
+.oui:hover{
+    background-color: rgba(0, 0, 0, 0);
+    
+    transition: 0.8s;
+}
+
+.non{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 6px 50px 6px 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border: solid 1px lightslategrey;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.reseau{
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+    right: 6%
+
+}
+
+.reseau ul {
+    position: absolute;
+    list-style: none;
+}
+
+.reseau ul li {
+    padding: 12px 0;
+    display: inline-block !important;
+}
+
+ion-icon:hover{
+    color: #D13B3B;
+    transition: 0.2s;
+}
+
+.ring{
+    margin: 0;
+    padding: 0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    opacity: 0.7;
+}
+
+.ringOne img {
+    animation: rotateFirstRing 2s linear infinite;
+}
+
+.ringTwo img {
+    animation: rotateFirstRing 8s linear infinite;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 80vh;
+    margin: auto;
+}
+
+.skills article{
+    max-width: 35%;
+    height: 30%;
+}
+
+.skills p{
+    font-size: 20px;
+    padding-top: 0;
+    text-align: justify;
+}
+
+.title-skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.title-skills ion-icon{
+    font-size:32px;
+    color: grey;
+}
+
+.skills h3{
+    font-family: Poppins;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5px;
+
+}
+
+strong{
+    font-weight: normal;
+    color: #D13B3B;
+}
+
+#skills{
+    padding-bottom: 3%;
+    padding-left: 16%;
+}
+
+#projet{
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.projet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+.projet1 ,.projet2{
+    width: 25%;
+    height: 35vh;
+}
+
+.projet img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+.cover{
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cover h3{
+    font-family: poppins;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.cover:hover{
+    opacity: 0;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.titlestage{
+    padding-bottom: 2%;
+    padding-left: 16%;
+}
+
+.stage{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.stage p{
+    padding: 0;
+    font-size: 21px;
+    width: 60%;
+}
+
+.stage img{
+    width: 500px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.mission article{
+    height: 30%;
+    width:60%;
+    margin: auto;
+}
+
+.mission p{
+    font-size: 20px;
+    padding-top: 0;
+    text-align: justify;
+}
+
+.title-mission{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.title-mission ion-icon{
+    font-size:32px;
+    color: grey;
+}
+
+.mission h3{
+    font-family: Poppins;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5px;
+
+}
+
+#veille{
+    padding-bottom: 0;
+    padding-left: 16%;
+    padding-top: 2.5%;
+}
+
+.veille{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.veillecontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+    width: 65%;
+}
+
+.veillintro{
+    font-weight: normal;
+}
+
+.ccl-veille{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.ccl-veille p{
+    font-weight: normal;
+}
+
+.integration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.vod2{
+    flex-direction: row-reverse;
+}
+
+.integration p{
+    max-width: 45%;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.integration iframe{
+    max-width: 45%;
+}
+
+.resume{
+    width: 60%;
+}
+
+.veillintro{
+    width: 60%;
+    margin: auto;
+}
+
+@keyframes rotateFirstRing{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 1024px) {
+    html{
+        height: unset;
+    }
+
+    body{
+        height: unset;
+    }
+    .ring img {
+          display: none;
+    }
+    .header p, button, .media{
+          display: none;
+    }
+    .reseau{
+        display: none;
+    }
+
+    main{
+        height: unset;
+    }
+
+    main div{
+        width: 90%;
+        position: unset;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .skills{
+        flex-direction: column;
+        height: unset;
+        width: 100%;
+    }
+
+    .skills article{
+        max-width: unset;
+        height: unset;
+        width: 90%;
+        margin: auto;
+    }
+
+    .title-skills{
+        padding-top: 8%;
+    }
+
+    #skills{
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 5%;
+        text-align: center;
+    }
+    
+    #projet{
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 5%;
+
+        text-align: center;
+    }
+
+    .projet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: unset;
+    }
+    
+    .projet1 ,.projet2{
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
